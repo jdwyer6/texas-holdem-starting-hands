@@ -1,0 +1,62 @@
+:root {
+  --color-primary: #D12D36;
+  --font-size: 16px;
+  --color-dark: #424242;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+td {
+  width: 60px;
+  height: 60px;
+  border: 1px solid gray;
+}
+
+td:hover {
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.text-dark {
+  color: var(--color-dark);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.active {
+  border: 2px solid var(--color-primary);
+  background-color: transparent;
+  color: var(--color-dark);
+}
+
+.gap-sm {
+  gap: 16px;
+}
+
+.always {
+  background-color: rgb(215, 255, 215);
+}
+
+.mid {
+  background-color: rgb(250, 219, 160);
+}
+
+.late {
+  background-color: rgb(255, 167, 135);
+}
