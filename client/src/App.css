@@ -1,7 +1,12 @@
 :root {
   --color-primary: #D12D36;
   --font-size: 16px;
-  --color-dark: #424242;
+  --color-dark: rgb(36, 33, 28);
+  --color-primary: rgb(248, 175, 39);
+  --color-text: white;
+  --green: rgb(23, 107, 79);
+  --green-light: rgb(76, 107, 19);
+  --red: rgb(134, 25, 25);
 }
 
 #root {
@@ -11,11 +16,24 @@
   text-align: center;
 }
 
+body {
+  background-color: var(--color-dark);
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  color: var(--color-text);
+}
 
 td {
   width: 60px;
   height: 60px;
   border: 1px solid gray;
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  border: none;
 }
 
 td:hover {
@@ -27,10 +45,6 @@ td:hover {
   display: flex;
 }
 
-.text-dark {
-  color: var(--color-dark);
-}
-
 .text-primary {
   color: var(--color-primary);
 }
@@ -40,9 +54,7 @@ td:hover {
 }
 
 .active {
-  border: 2px solid var(--color-primary);
-  background-color: transparent;
-  color: var(--color-dark);
+  border: 3px solid white;
 }
 
 .gap-sm {
@@ -50,13 +62,17 @@ td:hover {
 }
 
 .always {
-  background-color: rgb(215, 255, 215);
+  background-color: var(--green);
 }
 
 .mid {
-  background-color: rgb(250, 219, 160);
+  background-color: var(--green-light);
 }
 
 .late {
-  background-color: rgb(255, 167, 135);
+  background-color: var(--color-primary);
+}
+
+.fold {
+  background-color: var(--red);
 }
