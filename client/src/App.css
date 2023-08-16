@@ -1,5 +1,4 @@
 :root {
-  --color-primary: #D12D36;
   --font-size: 16px;
   --color-dark: rgb(36, 33, 28);
   --color-primary: rgb(248, 175, 39);
@@ -36,6 +35,12 @@ button {
   border: none;
 }
 
+button:hover {
+  outline: 1px solid white;
+  color: white;
+  background-color: transparent;
+}
+
 td:hover {
   background-color: darkgray;
   cursor: pointer;
@@ -54,7 +59,8 @@ td:hover {
 }
 
 .active {
-  border: 3px solid white;
+  background-color: var(--red);
+  color: white;
 }
 
 .gap-sm {
@@ -75,4 +81,9 @@ td:hover {
 
 .fold {
   background-color: var(--red);
+}
+
+.btn-secondary {
+  background-color: var(--green);
+  color: white;
 }
